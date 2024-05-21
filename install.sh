@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "Installing termux-am"
 pkg install termux-am -y &>/dev/null
 
@@ -37,7 +38,7 @@ pip install objgraph &>/dev/null
 pip install aiofiles &>/dev/null
 pip install blessings &>/dev/null
 
-echo "Installing boxfartbox"
+echo "Installing BoxFartBox"
 wget https://github.com/mebabo1/menano/releases/download/Box/box64.tar.xz
 tar xf box64.tar.xz
 rm -rf box64.tar.xz
@@ -57,5 +58,10 @@ mv opt/wine usr/glibc/opt
 rm -rf opt
 rm -rf root
 wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox &>/dev/null
+wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox.py &>/dev/null
+wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/start-fartbox.py &>/dev/null
+wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/winetricks &>/dev/null
+chmod +x box64droid winetricks
+mv box64droid box64droid.py start-box64.py winetricks $PREFIX/bin
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
