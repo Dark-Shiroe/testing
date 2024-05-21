@@ -128,7 +128,7 @@ def start():
         os.system("rm $PREFIX/bin/boxfartbox.py")
         os.system("rm $PREFIX/bin/start-fartbox.py")
     elif sys.argv[1] == "--reinstall":
-        os.system("curl -o install https://raw.githubusercontent.com/Dark-Shiroe/testing/main/install.sh && chmod +x install && ./install")
+        os.system("curl -o install https://raw.githubusercontent.com/Dark-Shiroe/testing/main/install && chmod +x install && ./install")
     elif sys.argv[1] == "--version":
         print("20.05.24")
     elif sys.argv[1] == "--help":
