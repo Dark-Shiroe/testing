@@ -43,8 +43,8 @@ wget https://github.com/mebabo1/menano/releases/download/Box/box64.tar.xz
 tar xf box64.tar.xz
 rm -rf box64.tar.xz
 wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optboxfartbox.tar.xz
-tar xf boxfartbox.tar.xz
-rm -rf boxfartbox.tar.xz
+tar xf optboxfartbox.tar.xz
+rm -rf optboxfartbox.tar.xz
 wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/etcfonts.tar.gz
 tar xf etcfonts.tar.gz
 rm -rf etcfonts.tar.gz
