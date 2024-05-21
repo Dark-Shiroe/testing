@@ -1,0 +1,12 @@
+#!/bin/bash
+pkg install termux-am -y &>/dev/null
+termux-setup-storage & sleep 4 &>/dev/null
+while true; do
+    if [ -d ~/storage/shared ]; then
+        break
+    else
+        echo "Storage permission denied"
+    fi
+    sleep 3
+done
+
