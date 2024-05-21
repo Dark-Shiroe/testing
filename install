@@ -39,6 +39,7 @@ pip install aiofiles &>/dev/null
 pip install blessings &>/dev/null
 
 echo "Installing BoxFartBox"
+cd /data/data/com.termux/files
 wget https://github.com/mebabo1/menano/releases/download/Box/box64.tar.xz
 tar xf box64.tar.xz
 rm -rf box64.tar.xz
@@ -64,5 +65,6 @@ wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/winetricks &>/de
 chmod +x boxfartbox winetricks
 mv boxfartbox boxfartbox.py start-fartbox.py winetricks $PREFIX/bin
 rm -rf install
+cd
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
