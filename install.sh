@@ -61,8 +61,8 @@ wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox &>/de
 wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox.py &>/dev/null
 wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/start-fartbox.py &>/dev/null
 wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/winetricks &>/dev/null
-chmod +x box64droid winetricks
-mv box64droid box64droid.py start-box64.py winetricks $PREFIX/bin
+chmod +x boxfartbox winetricks
+mv boxfartbox boxfartbox.py start-fartbox.py winetricks $PREFIX/bin
 rm -rf install
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
