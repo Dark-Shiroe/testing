@@ -69,6 +69,7 @@ wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/quartz2
 7z x quartz2.7z -o$PREFIX/glibc/opt/prefix
 wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/quartz2reg.ink
 mv quartz2reg.ink $PREFIX/glibc/opt/prefix/start/Install
+rm -rf quartz2.7z
 cd
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
