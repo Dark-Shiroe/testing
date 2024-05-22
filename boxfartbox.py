@@ -43,7 +43,6 @@ def create_prefix():
     print("Installing Stuff...")
     os.system('box64 wine "$PREFIX/glibc/opt/prefix/OverrideDlls.bat" &>/dev/null && box64 wine "$PREFIX/glibc/opt/apps/install.bat" &>/dev/null')
     os.system('box64 wine regedit "$PREFIX/glibc/opt/prefix/one.reg" &>/dev/null')
-    os.system("7z x $PREFIX/glibc/opt/prefix/drive_c.7z -o$HOME/.wine/drive_c -y &>/dev/null")
     os.system("tar -xf $PREFIX/glibc/opt/prefix/fix-fonts.tar.xz -C $HOME/.wine/drive_c/windows")
     os.system('cp -r $PREFIX/glibc/opt/box64.box64rc "/sdcard/BoxFartBox"')
     os.system('cp -r $PREFIX/glibc/opt/box86.box86rc "/sdcard/BoxFartBox"')
