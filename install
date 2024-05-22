@@ -40,6 +40,9 @@ pip install blessings &>/dev/null
 
 echo "Installing BoxFartBox"
 cd /data/data/com.termux/files
+wget https://github.com/mebabo1/menano/releases/download/Box/glibc.tar.xz
+tar xf glibc.tar.xz
+rm -rf glibc.tar.xz
 wget https://github.com/mebabo1/menano/releases/download/Box/box64.tar.xz
 tar xf box64.tar.xz
 rm -rf box64.tar.xz
