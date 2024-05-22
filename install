@@ -65,6 +65,10 @@ wget https://raw.githubusercontent.com/Dark-Shiroe/testing/main/winetricks &>/de
 chmod +x boxfartbox winetricks
 mv boxfartbox boxfartbox.py start-fartbox.py winetricks $PREFIX/bin
 rm -rf install
+wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/quartz2.7z
+7z x quartz2.7z -o$PREFIX/glibc/opt/prefix
+wget https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/quartz2reg.ink
+mv quartz2reg.ink $PREFIX/glibc/opt/prefix/start/Install
 cd
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
