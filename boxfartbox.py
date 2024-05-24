@@ -48,6 +48,14 @@ def create_prefix():
     os.system('cp -r $PREFIX/glibc/opt/box86.box86rc "/sdcard/BoxFartBox"')
     print("Done!")
     main_menu()
+def fonts_glibc():
+    os.system("clear")
+    print("Downloading JP fonts...")
+    os.system("wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/fontsglibc.tar.xz")
+    print("Extracting font to glibc/share...")
+    os.system('tar -xJf "$HOME/fontsglibc.tar.xz" -C /data/data/com.termux/files/usr/glibc/share')
+    print("Done...")
+    main_menu()
 def main_menu():
     os.system("clear")
     print("BoxFartBox Menu!")
@@ -58,10 +66,11 @@ def main_menu():
     print("3) Recreate Wine prefix")
     print("4) Update Box64")
     print("5) Winetricks")
-    print("6) Exit")
+    print("6) Install Fonts Jp(glibc)")
+    print("7) Exit")
     print("")
     choice = input()
-    if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6":
+    if choice != "1" and choice != "2" and choice != "3" and choice != "4" and choice != "5" and choice != "6" and choice != "7":
         print("Incorrect or empty option!")
         main_menu()
     elif choice == "1":
@@ -103,6 +112,9 @@ def main_menu():
         os.system("box64 winetricks >/dev/null 2>&1")
         main_menu()
     elif choice == "6":
+        os.system("clear")
+        fonts_glibc()
+    elif choice == "7":
         print("")
         print("Stopping Termux-X11...")
         print("")
@@ -127,7 +139,7 @@ def start():
         os.system("rm $PREFIX/bin/boxfartbox.py")
         os.system("rm $PREFIX/bin/start-fartbox.py")
     elif sys.argv[1] == "--reinstall":
-        os.system("curl -o install https://raw.githubusercontent.com/Dark-Shiroe/testing/main/install && chmod +x install && ./install")
+        os.system("curl -o install https://raw.githubusercontent.com/Ilya114/Box64Droid/main/installers/install.sh && chmod +x install && ./install")
     elif sys.argv[1] == "--version":
         print("20.05.24")
     elif sys.argv[1] == "--help":
