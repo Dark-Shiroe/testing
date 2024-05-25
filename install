@@ -40,12 +40,9 @@ pip install blessings &>/dev/null
 
 echo "Installing BoxFartBox"
 cd /data/data/com.termux/files
-wget -q --show-progress https://github.com/mebabo1/menano/releases/download/Box/glibc.tar.xz
-tar xf glibc.tar.xz
-rm -rf glibc.tar.xz
-wget -q --show-progress https://github.com/mebabo1/menano/releases/download/Box/box64.tar.xz
-tar xf box64.tar.xz
-rm -rf box64.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
+tar xf glibcfartbox.tar.xz
+rm -rf glibcfartbox.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optboxfartbox.tar.xz
 tar xf optboxfartbox.tar.xz
 rm -rf optboxfartbox.tar.xz
@@ -59,8 +56,6 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 7z x locale.7z -o$PREFIX/glibc/lib/locale
 rm -rf locale.7z
 mv opt/wine usr/glibc/opt
-rm -rf opt
-rm -rf root
 wget -q --show-progress https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox &>/dev/null
 wget -q --show-progress https://raw.githubusercontent.com/Dark-Shiroe/testing/main/boxfartbox.py &>/dev/null
 wget -q --show-progress https://raw.githubusercontent.com/Dark-Shiroe/testing/main/start-fartbox.py &>/dev/null
