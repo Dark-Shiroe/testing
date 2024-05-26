@@ -68,6 +68,11 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/quartz2reg.ink
 mv quartz2reg.ink $PREFIX/glibc/opt/prefix/start/Install
 rm -rf quartz2.7z
+cd /data/data/com.termux/files/usr/glibc/opt
+rm -rf wine
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
+tar xf wine.tar.xz
+rm -rf wine.tar.xz
 cd
 
 echo "To start BoxFartBox run 'boxfartbox --start'"
