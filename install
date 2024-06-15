@@ -48,12 +48,12 @@ rm -rf sharefont.tar.gz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/locale.7z
 7z x -y locale.7z -o$PREFIX/glibc/lib/locale
 rm -rf locale.7z
-rm -rf install
 cd /data/data/com.termux/files/usr/glibc/opt
 rm -rf wine
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
 tar xf wine.tar.xz
 rm -rf wine.tar.xz
+rm -rf $HOME/install
 cd
 
 echo "To start BoxFartBox run 'b64'"
