@@ -48,7 +48,6 @@ rm -rf sharefont.tar.gz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/locale.7z
 7z x -y locale.7z -o$PREFIX/glibc/lib/locale
 rm -rf locale.7z
-mv opt/wine usr/glibc/opt
 rm -rf install
 cd /data/data/com.termux/files/usr/glibc/opt
 rm -rf wine
