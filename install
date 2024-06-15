@@ -32,9 +32,9 @@ cd /data/data/com.termux/files
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
 tar xf glibcfartbox.tar.xz
 rm -rf glibcfartbox.tar.xz
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optboxfartbox.tar.xz
-tar xf optboxfart.tar.xz
-rm -rf optboxfart.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optfart.tar.xz
+tar xf optfart.tar.xz
+rm -rf optfart.tar.xz
 ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/etcfonts.tar.gz
 tar xf etcfonts.tar.gz
