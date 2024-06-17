@@ -59,6 +59,7 @@ def fonts_glibc():
     print("Extracting font to glibc/share...")
     os.system('tar -xJf "$HOME/fonts.tar.xz" -C /data/data/com.termux/files/usr/glibc/share')
     os.system('rm -rf "$HOME/fonts.tar.xz"')
+    os.system('mv /data/data/com.termux/files/usr/glibc/share/Fonts /data/data/com.termux/files/usr/glibc/share/fonts')
     print("Done...")
     main_menu()
 def sett_menu():
