@@ -6,7 +6,7 @@ pip install psutil
 
 cd /data/data/com.termux/files
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/BoxFartBox.tar.gz
-tar -xf BoxFartBox.tar.gz -C /sdcard/Download
+tar -xf BoxFartBox.tar.gz -C /sdcard
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optScripts.tar.xz
 tar xf optScripts.tar.xz
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
