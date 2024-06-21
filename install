@@ -1,0 +1,71 @@
+#!/bin/bash
+
+termux-setup-storage & sleep 4 &>/dev/null
+
+while true; do
+    if [ -d ~/storage/shared ]; then
+        break
+    else
+        echo "Storage permission denied"
+    fi
+    sleep 3
+done
+
+echo "Installing termux packages"
+apt-get clean
+apt-get update >/dev/null 2>&1
+apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade >/dev/null 2>&1
+pkg install x11-repo -y &>/dev/null
+pkg install nano pulseaudio -y &>/dev/null
+pkg install termux-am -y &>/dev/null
+pkg install wget -y &>/dev/null
+pkg install root-repo -y &>/dev/null
+pkg install p7zip -y &>/dev/null
+pkg install xorg-xrandr -y &>/dev/null
+pkg install termux-x11-nightly -y &>/dev/null
+apt install tur-repo -y &>/dev/null
+apt install virglrenderer-android virglrenderer-mesa-zink -y &>/dev/null
+pkg install python -y &>/dev/null
+pkg install python-pip -y &>/dev/null
+pip install psutil &>/dev/null
+
+echo "Installing BoxFartBox"
+cd /data/data/com.termux/files
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
+tar xf glibcfartbox.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optapps.tar.xz
+tar xf optapps.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibs.tar.xz
+tar xf optlibs.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optprefix.tar.xz
+tar xf optprefix.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optScripts.tar.xz
+tar xf optScripts.tar.xz
+wget -q --show-progress https://github.com/mebabo1/menano/releases/download/Box/alsa.tar
+tar xf alsa.tar
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/etcfonts.tar.gz
+tar xf etcfonts.tar.gz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/sharefont.tar.gz
+tar xf sharefont.tar.gz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/locale.7z
+7z x -y locale.7z -o$PREFIX/glibc/lib/locale &>/dev/null
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
+tar -xf wine.tar.xz -C $PREFIX/glibc/opt
+cd /data/data/com.termux/files/usr/glibc/opt/Scripts
+chmod +x b64 b64.py b64-start.py b64-virgl.py 
+cd /data/data/com.termux/files
+rm -rf glibcfartbox.tar.xz
+rm -rf optapps.tar.xz
+rm -rf optlibs.tar.xz
+rm -rf optprefix.tar.xz
+rm -rf optScripts.tar.xz
+rm -rf alsa.tar
+rm -rf etcfonts.tar.gz
+rm -rf sharefont.tar.gz
+rm -rf locale.7z
+rm -rf wine.tar.xz
+rm -rf $HOME/install
+ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
+cd
+
+echo "To start BoxFartBox run 'b64'"
