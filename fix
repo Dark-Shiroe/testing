@@ -14,7 +14,7 @@ chmod +x b64 b64.py b64-start.py b64-virgl.py
 cd /data/data/com.termux/files
 rm -rf BoxFartBox.tar.gz
 rm -rf optScripts.tar.xz
-rm -rf $HOME/fix
+rm -rf $HOME/install
 ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
 cd
 
