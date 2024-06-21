@@ -33,6 +33,8 @@ echo "Installing BoxFartBox"
 cd /data/data/com.termux/files
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
 tar xf glibcfartbox.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/BoxFartBox.tar.gz
+tar -xf BoxFartBox.tar.gz -C /sdcard/Download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optapps.tar.xz
 tar xf optapps.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibs.tar.xz
@@ -55,6 +57,7 @@ cd /data/data/com.termux/files/usr/glibc/opt/Scripts
 chmod +x b64 b64.py b64-start.py b64-virgl.py 
 cd /data/data/com.termux/files
 rm -rf glibcfartbox.tar.xz
+rm -rf BoxFartBox.tar.xz
 rm -rf optapps.tar.xz
 rm -rf optlibs.tar.xz
 rm -rf optprefix.tar.xz
