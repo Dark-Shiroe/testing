@@ -5,11 +5,14 @@ pkg install python-pip -y &>/dev/null
 pip install psutil
 
 cd /data/data/com.termux/files
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/BoxFartBox.tar.gz
+tar -xf BoxFartBox.tar.gz -C /sdcard/Download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optScripts.tar.xz
 tar xf optScripts.tar.xz
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
 chmod +x b64 b64.py b64-start.py b64-virgl.py 
 cd /data/data/com.termux/files
+rm -rf BoxFartBox.tar.gz
 rm -rf optScripts.tar.xz
 rm -rf $HOME/fix
 ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
