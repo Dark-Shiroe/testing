@@ -57,7 +57,7 @@ cd /data/data/com.termux/files/usr/glibc/opt/Scripts
 chmod +x b64 b64.py b64-start.py b64-virgl.py 
 cd /data/data/com.termux/files
 rm -rf glibcfartbox.tar.xz
-rm -rf BoxFartBox.tar.xz
+rm -rf BoxFartBox.tar.gz
 rm -rf optapps.tar.xz
 rm -rf optlibs.tar.xz
 rm -rf optprefix.tar.xz
