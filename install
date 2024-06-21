@@ -27,7 +27,7 @@ apt install tur-repo -y &>/dev/null
 apt install virglrenderer-android virglrenderer-mesa-zink -y &>/dev/null
 pkg install python -y &>/dev/null
 pkg install python-pip -y &>/dev/null
-pip install psutil -y &>/dev/null
+pip install psutil &>/dev/null
 
 echo "Installing BoxFartBox"
 cd /data/data/com.termux/files
