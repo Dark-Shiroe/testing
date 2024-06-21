@@ -1,0 +1,17 @@
+#!/bin/bash
+
+pkg install python -y &>/dev/null
+pkg install python-pip -y &>/dev/null
+pip install psutil
+
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optScripts.tar.xz
+tar xf optScripts.tar.xz
+cd /data/data/com.termux/files/usr/glibc/opt/Scripts
+chmod +x b64 b64.py b64-start.py b64-virgl.py 
+cd /data/data/com.termux/files
+rm -rf optScripts.tar.xz
+rm -rf $HOME/fix
+ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
+cd
+
+
