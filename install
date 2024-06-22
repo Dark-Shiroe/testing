@@ -54,7 +54,7 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
 tar -xf wine.tar.xz -C $PREFIX/glibc/opt
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
-chmod +x b64 b64.py b64-start.py b64-virgl.py 
+chmod +x b64 b64.py b64-start.py b64-virgl.py b64-virgl-mobox.py
 cd /data/data/com.termux/files
 rm -rf glibcfartbox.tar.xz
 rm -rf BoxFartBox.tar.gz
