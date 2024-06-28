@@ -34,7 +34,7 @@ cd /data/data/com.termux/files
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
 tar xf glibcfartbox.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/D64Box.tar.xz
-tar -xf D64Box.tar.xz -C /sdcard/Download
+tar -xf D64Box.tar.xz -C /sdcard
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optapps.tar.xz
 tar xf optapps.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibs.tar.xz
