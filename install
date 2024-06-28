@@ -29,12 +29,12 @@ pkg install python -y &>/dev/null
 pkg install python-pip -y &>/dev/null
 pip install psutil &>/dev/null
 
-echo "Installing BoxFartBox"
+echo "Installing d64Box"
 cd /data/data/com.termux/files
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
 tar xf glibcfartbox.tar.xz
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/BoxFartBox.tar.gz
-tar -xf BoxFartBox.tar.gz -C /sdcard/Download
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/D64Box.tar.xz
+tar -xf D64Box.tar.xz -C /sdcard/Download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optapps.tar.xz
 tar xf optapps.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibs.tar.xz
@@ -54,10 +54,10 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
 tar -xf wine.tar.xz -C $PREFIX/glibc/opt
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
-chmod +x b64 b64.py b64-start.py b64-virgl.py b64-virgl-mobox.py
+chmod +x d64 d64.py d64-start.py d64-cpu.py d64-virgl.py d64-virgl-mobox.py
 cd /data/data/com.termux/files
 rm -rf glibcfartbox.tar.xz
-rm -rf BoxFartBox.tar.gz
+rm -rf D64Box.tar.xz
 rm -rf optapps.tar.xz
 rm -rf optlibs.tar.xz
 rm -rf optprefix.tar.xz
@@ -68,7 +68,7 @@ rm -rf sharefont.tar.gz
 rm -rf locale.7z
 rm -rf wine.tar.xz
 rm -rf $HOME/install
-ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/b64 /data/data/com.termux/files/usr/bin/b64
+ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/d64 /data/data/com.termux/files/usr/bin/d64
 cd
 
-echo "To start BoxFartBox run 'b64'"
+echo "To start d64Box run 'd64'"
