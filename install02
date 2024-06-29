@@ -31,7 +31,7 @@ pip install psutil &>/dev/null
 
 echo "Installing d64Box"
 cd /data/data/com.termux/files
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibcfartbox.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/glibc.tar.xz
 tar xf glibc.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/D64Box.tar.xz
 tar -xf D64Box.tar.xz -C /sdcard
@@ -51,7 +51,7 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 tar xf sharefont.tar.gz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/locale.7z
 7z x -y locale.7z -o$PREFIX/glibc/lib/locale &>/dev/null
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine9.11.tar.xz
 tar -xf wine9.11.tar.xz -C $PREFIX/glibc/opt
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
 chmod +x d64 d64.py d64-start.py d64-cpu.py d64-virgl.py d64-virgl-mobox.py
