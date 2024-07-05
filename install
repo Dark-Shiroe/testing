@@ -19,9 +19,9 @@ pkg install termux-am x11-repo -y &>/dev/null
 pkg install nano pulseaudio -y &>/dev/null
 pkg install wget -y &>/dev/null
 pkg install root-repo -y &>/dev/null
-pkg install p7zip -y &>/dev/null
 pkg install xorg-xrandr -y &>/dev/null
 pkg install termux-x11-nightly -y &>/dev/null
+pkg install p7zip -y &>/dev/null
 apt install tur-repo -y &>/dev/null
 apt install virglrenderer-android virglrenderer-mesa-zink -y &>/dev/null
 pkg install python -y &>/dev/null
