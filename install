@@ -13,6 +13,9 @@ done
 
 echo "Installing termux packages"
 pkg install termux-am x11-repo -y
+apt-get clean
+apt-get update >/dev/null 2>&1
+apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade >/dev/null 2>&1
 pkg install nano pulseaudio -y
 pkg install wget -y
 pkg install root-repo -y
@@ -24,9 +27,6 @@ apt install virglrenderer-android virglrenderer-mesa-zink -y
 pkg install python -y
 pkg install python-pip -y
 pip install psutil
-apt-get clean
-apt-get update >/dev/null 2>&1
-apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade >/dev/null 2>&1
 
 echo "Installing d64Box"
 cd /data/data/com.termux/files
