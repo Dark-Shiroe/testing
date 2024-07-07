@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Installing termux-am"
+pkg install termux-am x11-repo -y
+
 termux-setup-storage & sleep 4 &>/dev/null
 
 while true; do
@@ -12,7 +15,6 @@ while true; do
 done
 
 echo "Installing termux packages"
-pkg install termux-am x11-repo -y
 apt-get clean
 apt-get update >/dev/null 2>&1
 apt-get -y --with-new-pkgs -o Dpkg::Options::="--force-confdef" upgrade >/dev/null 2>&1
