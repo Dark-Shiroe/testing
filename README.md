@@ -6,7 +6,7 @@ Mod box using glibc mebabo, main script box64droid and mobox files.
 > curl -o install https://raw.githubusercontent.com/Dark-Shiroe/testing/main/install && chmod +x install && ./install
 
 
-• If want to use wine 9.11 run cmd in termux
+• If you want to use wine 9.11 run this command in termux
 ```
 cd ..
 rm -rf usr/glibc/opt/wine
