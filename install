@@ -38,8 +38,16 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 tar -xf D64Box.tar.xz -C /sdcard
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optapps.tar.xz
 tar xf optapps.tar.xz
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibsv1.tar.xz
-tar xf optlibsv1.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibs.tar.xz
+tar xf optlibs.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibsbox64.tar.xz
+tar xf optlibsbox64.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibsd3d.tar.xz
+tar xf optlibsd3d.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibsmesavirgl.tar.xz
+tar xf optlibsmesavirgl.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optlibstz.tar.xz
+tar xf optlibstz.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optprefix.tar.xz
 tar xf optprefix.tar.xz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/optScripts.tar.xz
@@ -60,7 +68,11 @@ cd /data/data/com.termux/files
 rm -rf glibcfartbox.tar.xz
 rm -rf D64Box.tar.xz
 rm -rf optapps.tar.xz
-rm -rf optlibsv1.tar.xz
+rm -rf optlibs.tar.xz
+rm -rf optlibsbox64.tar.xz
+rm -rf optlibsd3d.tar.xz
+rm -rf optlibsmesavirgl.tar.xz
+rm -rf optlibstz.tar.xz
 rm -rf optprefix.tar.xz
 rm -rf optScripts.tar.xz
 rm -rf alsa.tar
