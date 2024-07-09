@@ -28,6 +28,7 @@ apt install tur-repo -y
 apt install virglrenderer-android virglrenderer-mesa-zink -y
 pkg install python -y
 pkg install python-pip -y
+pkg add python3 -y
 pip install psutil
 
 echo "Installing d64Box"
