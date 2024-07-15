@@ -61,8 +61,8 @@ wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download
 tar xf sharefont.tar.gz
 wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/locale.7z
 7z x -y locale.7z -o$PREFIX/glibc/lib/locale &>/dev/null
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
-tar -xf wine.tar.xz -C $PREFIX/glibc/opt
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine9.11.tar.xz
+tar -xf wine9.11.tar.xz -C $PREFIX/glibc/opt
 cd /data/data/com.termux/files/usr/glibc/opt/Scripts
 chmod +x d64 d64.py d64-start.py d64-cpu.py d64-virgl.py d64-virgl-mobox.py
 cd /data/data/com.termux/files
@@ -80,7 +80,7 @@ rm -rf alsa.tar
 rm -rf etcfonts.tar.gz
 rm -rf sharefont.tar.gz
 rm -rf locale.7z
-rm -rf wine.tar.xz
+rm -rf wine9.11.tar.xz
 rm -rf $HOME/install
 ln -sf /data/data/com.termux/files/usr/glibc/opt/Scripts/d64 /data/data/com.termux/files/usr/bin/d64
 cd
