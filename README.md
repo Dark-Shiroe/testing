@@ -2,11 +2,11 @@ d64Box
 
 Mod box using glibc mebabo, main script box64droid and mobox files.
 
-• Install glibc and wine 9.9
+• Install glibc and wine 9.11
 > curl -o install https://raw.githubusercontent.com/Dark-Shiroe/testing/main/install && chmod +x install && ./install
 
 
-• If you want to use wine 9.11 run this command in termux
+• If you want to use wine 9.9 run this command in termux
 ```
 cd ..
 ```
@@ -14,13 +14,13 @@ cd ..
 rm -rf usr/glibc/opt/wine
 ```
 ```
-wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine9.11.tar.xz
+wget -q --show-progress https://github.com/Dark-Shiroe/testing/releases/download/boxfartbox/wine.tar.xz
 ```
 ```
-tar -xf wine9.11.tar.xz -C $PREFIX/glibc/opt
+tar -xf wine.tar.xz -C $PREFIX/glibc/opt
 ```
 ```
-rm -rf wine9.11.tar.xz
+rm -rf wine.tar.xz
 ```
 ```
 cd
